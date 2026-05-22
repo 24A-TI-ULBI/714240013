@@ -1,8 +1,8 @@
 # Modul 10: Prestasi & Kategori — Portal Informasi Akademik Kampus (SIAKAD)
 
 **Nama:** Mohammad Isa Widianto
-**NPM:** 714240013 
-**Mata Kuliah:** Pemrograman Web Service  
+**NPM:** 714240013
+**Mata Kuliah:** Pemrograman Web Service
 **Modul:** 10 — Prestasi & Kategori
 
 ---
