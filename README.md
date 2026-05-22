@@ -76,10 +76,10 @@ graph TD
     ROUTER["Go Fiber Router (url/prestasiRoute.go)"]
     CTRL["Controller (controller/prestasiController.go)"]
     HLP["Helper (helper/db.go)"]
-    DB[("MongoDB Atlas")]
+    DB[(MongoDB Atlas)]
 
     USER -->|Interact| FE
-    FE -->|Fetch API (JSON)| ROUTER
+    FE -->|Fetch API JSON| ROUTER
     ROUTER -->|Route Handler| CTRL
     CTRL -->|BSON / Object| HLP
     HLP -->|Queries| DB
