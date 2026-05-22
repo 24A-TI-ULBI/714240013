@@ -73,16 +73,16 @@ type KategoriPrestasi struct {
 graph TD
     USER["User / Browser"]
     FE["Frontend (prestasi.html)"]
-    API["Go Fiber Router (url/prestasiRoute.go)"]
+    ROUTER["Go Fiber Router (url/prestasiRoute.go)"]
     CTRL["Controller (controller/prestasiController.go)"]
     HLP["Helper (helper/db.go)"]
     DB[("MongoDB Atlas")]
 
-    USER <-->|Interact| FE
-    FE <-->|Fetch API (JSON)| API
-    API <-->|Route Handler| CTRL
-    CTRL <-->|BSON / Object| HLP
-    HLP <-->|Queries| DB
+    USER -->|Interact| FE
+    FE -->|Fetch API (JSON)| ROUTER
+    ROUTER -->|Route Handler| CTRL
+    CTRL -->|BSON / Object| HLP
+    HLP -->|Queries| DB
 ```
 
 ---
